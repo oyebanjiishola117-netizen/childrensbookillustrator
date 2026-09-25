@@ -1,3 +1,8 @@
+import dreamer from "@/assets/portfolio/dreamer.jpg.asset.json";
+import earthHelpers from "@/assets/portfolio/earth-helpers.jpg.asset.json";
+import natureTrip from "@/assets/portfolio/nature-trip.jpg.asset.json";
+import jungle from "@/assets/portfolio/jungle.jpg.asset.json";
+import bunnyColoring from "@/assets/portfolio/bunny-coloring.jpg.asset.json";
 import door from "@/assets/portfolio/door.jpg.asset.json";
 import kneeling from "@/assets/portfolio/kneeling.jpg.asset.json";
 import path from "@/assets/portfolio/path.jpg.asset.json";
@@ -69,6 +74,11 @@ export const portfolioItems: PortfolioItem[] = [
   { src: forestPath.url, title: "The forest path", caption: "A boy sets off down a stone path into the jungle.", category: "Book Covers", alt: "Boy with an orange backpack walking down a jungle path" },
   { src: puppyRun.url, title: "Racing home", caption: "A girl and her puppy dash down the street.", category: "Interior Scenes", alt: "Girl with beaded braids running with a puppy down a sunny street" },
   { src: girlPuppy.url, title: "Best friends", caption: "A girl and her puppy on the front lawn.", category: "Character Design", alt: "Curly-haired girl sitting on grass beside a puppy" },
+  { src: dreamer.url, title: "Daydreamer", caption: "A girl sketches her ideas in a flower meadow.", category: "Character Design", alt: "Red-haired girl with yellow glasses writing in a notebook among flowers", featured: true },
+  { src: bunnyColoring.url, title: "Bunny coloring book", caption: "Cover showing the finished page beside the line art.", category: "Coloring Book Covers", alt: "Coloring book cover with a bunny half painted and half in outline" },
+  { src: earthHelpers.url, title: "Caring for the Earth", caption: "Children planting and watering on a sunny hill.", category: "Interior Scenes", alt: "Three children gardening in front of a large globe" },
+  { src: natureTrip.url, title: "School nature trip", caption: "A cheerful class heads up the forest trail.", category: "Interior Scenes", alt: "Group of schoolchildren and a teacher hiking a forest path" },
+  { src: jungle.url, title: "Jungle adventure", caption: "Friends follow a map through the rainforest.", category: "Interior Scenes", alt: "Kids with backpacks and a map walking through a jungle with parrots and monkeys" },
 ];
 
 export const sortedPortfolioItems = (): PortfolioItem[] =>
