@@ -1,3 +1,23 @@
+import door from "@/assets/portfolio/door.jpg.asset.json";
+import kneeling from "@/assets/portfolio/kneeling.jpg.asset.json";
+import path from "@/assets/portfolio/path.jpg.asset.json";
+import forest from "@/assets/portfolio/forest.jpg.asset.json";
+import meadow from "@/assets/portfolio/meadow.jpg.asset.json";
+import reaching from "@/assets/portfolio/reaching.jpg.asset.json";
+import lookingUp from "@/assets/portfolio/looking-up.jpg.asset.json";
+import windowImg from "@/assets/portfolio/window.jpg.asset.json";
+import macaw from "@/assets/portfolio/macaw.jpg.asset.json";
+import poppy from "@/assets/portfolio/poppy.jpg.asset.json";
+import zara from "@/assets/portfolio/zara.jpg.asset.json";
+import travel from "@/assets/portfolio/travel.jpg.asset.json";
+import magicBook from "@/assets/portfolio/magic-book.jpg.asset.json";
+import scouts from "@/assets/portfolio/scouts.jpg.asset.json";
+import explorers from "@/assets/portfolio/explorers.jpg.asset.json";
+import forestPath from "@/assets/portfolio/forest-path.jpg.asset.json";
+import natureWalk from "@/assets/portfolio/nature-walk.jpg.asset.json";
+import puppyRun from "@/assets/portfolio/puppy-run.jpg.asset.json";
+import girlPuppy from "@/assets/portfolio/girl-puppy.jpg.asset.json";
+
 export type PortfolioCategory =
   | "Book Covers"
   | "Interior Scenes"
@@ -24,25 +44,6 @@ export type PortfolioItem = {
   featured?: boolean;
 };
 
-import door from "@/assets/portfolio/door.jpg.asset.json";
-import kneeling from "@/assets/portfolio/kneeling.jpg.asset.json";
-import path from "@/assets/portfolio/path.jpg.asset.json";
-import forest from "@/assets/portfolio/forest.jpg.asset.json";
-import meadow from "@/assets/portfolio/meadow.jpg.asset.json";
-import reaching from "@/assets/portfolio/reaching.jpg.asset.json";
-import lookingUp from "@/assets/portfolio/looking-up.jpg.asset.json";
-import windowImg from "@/assets/portfolio/window.jpg.asset.json";
-import macaw from "@/assets/portfolio/macaw.jpg.asset.json";
-import poppy from "@/assets/portfolio/poppy.jpg.asset.json";
-import zara from "@/assets/portfolio/zara.jpg.asset.json";
-import travel from "@/assets/portfolio/travel.jpg.asset.json";
-import magicBook from "@/assets/portfolio/magic-book.jpg.asset.json";
-import scouts from "@/assets/portfolio/scouts.jpg.asset.json";
-import explorers from "@/assets/portfolio/explorers.jpg.asset.json";
-import forestPath from "@/assets/portfolio/forest-path.jpg.asset.json";
-import natureWalk from "@/assets/portfolio/nature-walk.jpg.asset.json";
-import puppyRun from "@/assets/portfolio/puppy-run.jpg.asset.json";
-import girlPuppy from "@/assets/portfolio/girl-puppy.jpg.asset.json";
 
 /**
  * Add a new piece by appending one object below. Nothing else needs to change:
