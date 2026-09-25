@@ -177,10 +177,12 @@ function Index() {
       {/* ABOUT */}
       <section id="about" className="bg-sand/50 py-16">
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 sm:px-8 md:grid-cols-[320px_1fr]">
-          <div className="aspect-[4/5] w-full max-w-xs overflow-hidden rounded-3xl border border-dashed border-border bg-card/70 p-6">
-            <div className="flex h-full items-center justify-center text-center text-xs uppercase tracking-widest text-muted-foreground">
-              Portrait
-            </div>
+          <div className="aspect-[4/5] w-full max-w-xs overflow-hidden rounded-3xl bg-sand/60 shadow-lift">
+            <img
+              src={portrait.url}
+              alt="Portrait of Azeez Faruq"
+              className="h-full w-full object-cover"
+            />
           </div>
           <div>
             <h2 className="text-3xl text-foreground sm:text-4xl">About Azeez</h2>
