@@ -22,6 +22,8 @@ import forestPath from "@/assets/portfolio/forest-path.jpg.asset.json";
 import natureWalk from "@/assets/portfolio/nature-walk.jpg.asset.json";
 import puppyRun from "@/assets/portfolio/puppy-run.jpg.asset.json";
 import girlPuppy from "@/assets/portfolio/girl-puppy.jpg.asset.json";
+import kindKids from "@/assets/portfolio/kind-kids.jpg.asset.json";
+import bearColoring from "@/assets/portfolio/bear-coloring.jpg.asset.json";
 
 export type PortfolioCategory =
   | "Book Covers"
@@ -79,6 +81,8 @@ export const portfolioItems: PortfolioItem[] = [
   { src: earthHelpers.url, title: "Caring for the Earth", caption: "Children planting and watering on a sunny hill.", category: "Interior Scenes", alt: "Three children gardening in front of a large globe" },
   { src: natureTrip.url, title: "School nature trip", caption: "A cheerful class heads up the forest trail.", category: "Interior Scenes", alt: "Group of schoolchildren and a teacher hiking a forest path" },
   { src: jungle.url, title: "Jungle adventure", caption: "Friends follow a map through the rainforest.", category: "Interior Scenes", alt: "Kids with backpacks and a map walking through a jungle with parrots and monkeys" },
+  { src: kindKids.url, title: "Kind kids change the world", caption: "Two children plant a tree under a smiling Earth.", category: "Interior Scenes", alt: "Watercolor of two children planting a sapling with forest animals and a smiling planet Earth behind them" },
+  { src: bearColoring.url, title: "Baby bear coloring book", caption: "A crayon-style teddy bear cover for ages 3+.", category: "Coloring Book Covers", alt: "Coloring book cover with a crayon-drawn teddy bear, butterflies, honey and crayons" },
 ];
 
 export const sortedPortfolioItems = (): PortfolioItem[] =>
