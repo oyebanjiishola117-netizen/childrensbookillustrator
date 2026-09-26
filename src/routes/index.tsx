@@ -191,12 +191,14 @@ function Index() {
           visual style, and what your book needs.
         </p>
         <div className="mt-8">
-          <a
-            href={MAILTO}
-            className="inline-flex rounded-full bg-primary px-8 py-4 text-base font-medium text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5"
-          >
-            Tell Me About My Book
-          </a>
+        <a
+          href={WHATSAPP}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex rounded-full bg-primary px-8 py-4 text-base font-medium text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5"
+        >
+          Message Me on WhatsApp
+        </a>
         </div>
         <a
           href={MAILTO}
