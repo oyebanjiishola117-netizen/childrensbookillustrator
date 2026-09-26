@@ -10,6 +10,9 @@ const links = [
 export const MAILTO =
   "mailto:azeezfaruk405@gmail.com?subject=Children%E2%80%99s%20book%20illustration%20inquiry";
 
+export const WHATSAPP =
+  "https://wa.me/message/3HGR2PP4YYF7E1?text=Hi%20Azeez!%20I%27d%20like%20to%20talk%20about%20a%20children%27s%20book.";
+
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false);
 
@@ -47,7 +50,9 @@ export function SiteHeader() {
         </nav>
 
         <a
-          href={MAILTO}
+          href={WHATSAPP}
+          target="_blank"
+          rel="noreferrer"
           className="rounded-full bg-primary px-4 py-2 text-sm font-medium text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
         >
           Get in touch
