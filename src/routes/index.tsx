@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteHeader, MAILTO } from "@/components/site-header";
+import { SiteHeader, MAILTO, WHATSAPP } from "@/components/site-header";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
-import { sortedPortfolioItems } from "@/data/portfolio";
+import door from "@/assets/portfolio/door.jpg.asset.json";
 import portrait from "@/assets/portrait.png.asset.json";
 
 const TITLE = "Azeez Faruq — Children's Book Illustrator";
