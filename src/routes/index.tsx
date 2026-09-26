@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { SiteHeader, MAILTO } from "@/components/site-header";
+import { SiteHeader, MAILTO, WHATSAPP } from "@/components/site-header";
 import { PortfolioGallery } from "@/components/portfolio-gallery";
-import { sortedPortfolioItems } from "@/data/portfolio";
+import door from "@/assets/portfolio/door.jpg.asset.json";
 import portrait from "@/assets/portrait.png.asset.json";
 
 const TITLE = "Azeez Faruq — Children's Book Illustrator";
@@ -50,33 +50,6 @@ const steps = [
   "Print-ready files",
 ];
 
-function ArtSlot({
-  index,
-  className,
-  rounded = "rounded-3xl",
-}: {
-  index: number;
-  className?: string;
-  rounded?: string;
-}) {
-  const item = sortedPortfolioItems()[index];
-  if (item) {
-    return (
-      <img
-        src={item.src}
-        alt={item.alt}
-        className={`${rounded} ${className ?? ""} w-full object-cover shadow-lift`}
-      />
-    );
-  }
-  return (
-    <div
-      className={`${rounded} ${className ?? ""} flex w-full items-center justify-center border border-dashed border-border bg-sand/60 p-6 text-center text-xs uppercase tracking-widest text-muted-foreground`}
-    >
-      Illustration
-    </div>
-  );
-}
 
 function Index() {
   return (
@@ -84,40 +57,50 @@ function Index() {
       <SiteHeader />
 
       {/* HERO */}
-      <section className="mx-auto max-w-6xl px-5 pb-16 pt-10 sm:px-8 sm:pt-16">
-        <div className="grid items-center gap-10 lg:grid-cols-[1.05fr_1fr]">
-          <div>
-            <p className="text-xs uppercase tracking-[0.25em] text-accent">
-              Children&rsquo;s book illustrator
-            </p>
-            <h1 className="mt-4 text-4xl leading-[1.08] text-foreground sm:text-5xl lg:text-6xl">
-              Children&rsquo;s book illustrations that bring every page together.
-            </h1>
-            <p className="mt-5 max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              I&rsquo;m Azeez Faruq. I help turn manuscripts into expressive, cohesive
-              books&mdash;from memorable characters to finished illustrations and print-ready
-              files.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href="#work"
-                className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-soft transition-transform hover:-translate-y-0.5"
-              >
-                View My Work
-              </a>
-              <a
-                href={MAILTO}
-                className="rounded-full border border-border bg-card px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
-              >
-                Tell Me About Your Book
-              </a>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-3 gap-4">
-            <ArtSlot index={0} className="col-span-3 aspect-[4/3]" />
-            <ArtSlot index={1} className="col-span-1 aspect-square" rounded="rounded-2xl" />
-            <ArtSlot index={2} className="col-span-2 aspect-[2/1]" rounded="rounded-2xl" />
+      <section className="relative overflow-hidden">
+        <img
+          src={door.url}
+          alt=""
+          aria-hidden
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        {/* soft cream scrim so the sticky header stays readable over the art */}
+        <div
+          aria-hidden
+          className="absolute inset-x-0 top-0 h-32 bg-gradient-to-b from-[oklch(0.973_0.017_86/0.85)] to-transparent"
+        />
+        {/* warm dark scrim so the headline reads over the art */}
+        <div
+          aria-hidden
+          className="absolute inset-0 bg-gradient-to-t from-[oklch(0.24_0.03_52/0.92)] via-[oklch(0.24_0.03_52/0.4)] to-transparent"
+        />
+        <div className="relative mx-auto max-w-6xl px-5 pb-20 pt-28 sm:px-8 sm:pb-28 sm:pt-36">
+          <p className="text-xs font-semibold uppercase tracking-[0.25em] text-highlight">
+            Children&rsquo;s book illustrator
+          </p>
+          <h1 className="mt-4 max-w-2xl text-4xl leading-[1.08] text-white drop-shadow-md sm:text-5xl lg:text-6xl">
+            Children&rsquo;s book illustrations that bring every page together.
+          </h1>
+          <p className="mt-5 max-w-xl text-base leading-relaxed text-white/90 drop-shadow-sm sm:text-lg">
+            I&rsquo;m Azeez Faruq. I help turn manuscripts into expressive, cohesive
+            books&mdash;from memorable characters to finished illustrations and print-ready
+            files.
+          </p>
+          <div className="mt-8 flex flex-wrap gap-3">
+            <a
+              href={WHATSAPP}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full bg-primary px-6 py-3 text-sm font-medium text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5"
+            >
+              Message Me on WhatsApp
+            </a>
+            <a
+              href="#work"
+              className="rounded-full border border-white/40 bg-white/10 px-6 py-3 text-sm font-medium text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+            >
+              View My Work
+            </a>
           </div>
         </div>
       </section>
@@ -208,12 +191,14 @@ function Index() {
           visual style, and what your book needs.
         </p>
         <div className="mt-8">
-          <a
-            href={MAILTO}
-            className="inline-flex rounded-full bg-primary px-8 py-4 text-base font-medium text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5"
-          >
-            Tell Me About My Book
-          </a>
+        <a
+          href={WHATSAPP}
+          target="_blank"
+          rel="noreferrer"
+          className="inline-flex rounded-full bg-primary px-8 py-4 text-base font-medium text-primary-foreground shadow-lift transition-transform hover:-translate-y-0.5"
+        >
+          Message Me on WhatsApp
+        </a>
         </div>
         <a
           href={MAILTO}
