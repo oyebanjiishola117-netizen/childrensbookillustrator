@@ -3,4 +3,4 @@
 - [x] Add second batch of 10 illustrations (Poppy, Zara sheets, and scenes)
 - [ ] Portrait — waiting on Azeez's photo
 - [ ] Add and organize the latest five illustrations and review the uploaded 20-page book for portfolio samples
-- [ ] Remove the Baby bear coloring book item from the gallery
+- [x] Remove the Baby bear coloring book item from the gallery
