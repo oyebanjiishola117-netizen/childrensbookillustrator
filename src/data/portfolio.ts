@@ -62,7 +62,7 @@ export type PortfolioItem = {
  * Add a new piece by appending one object below. Nothing else needs to change:
  * the grid and lightbox read from this list.
  */
-export const portfolioItems: PortfolioItem[
+export const portfolioItems: PortfolioItem[] = [
   { src: duckFeetCover.url, title: "Backpacks, Duck Feet, and a Whole Lot of Love", caption: "Cover for a cozy treehouse story.", category: "Book Covers", alt: "Book cover with three smiling children wearing backpacks by a lake and treehouse", featured: true },
   { src: faithCover.url, title: "Faith That Lives in the Heart", caption: "Cover with a boy, his glowing backpack and two dogs.", category: "Book Covers", alt: "Book cover of a boy holding a glowing blue backpack between two dogs at sunset" },
   { src: artieSpread1.url, title: "Artie — off to school", caption: "Spread from a picture book about starting the school day.", category: "Interior Scenes", alt: "Picture book spread of a boy tying his shoes and running into school" },
@@ -70,7 +70,6 @@ export const portfolioItems: PortfolioItem[
   { src: artieSpread3.url, title: "Artie — Miss Cindy's class", caption: "Friends and a classroom scene.", category: "Interior Scenes", alt: "Picture book spread of three children waving and a teacher at a chalkboard" },
   { src: pencilDreams.url, title: "Pencil dreams", caption: "A girl imagines flowers blooming from her drawings.", category: "Interior Scenes", alt: "Girl resting her chin on a pencil at a desk with glowing flowers around her", featured: true },
   { src: backpackGirl.url, title: "Backpack girl — poses", caption: "Character poses and expressions.", category: "Character Design", alt: "Three poses of a red-haired girl with a green backpack" },
-] = [
   { src: door.url, title: "The secret door", caption: "A child steps through a glowing tree door into a hidden world.", category: "Interior Scenes", alt: "Child opening a glowing door in a giant tree, revealing colorful mushrooms and crystals", featured: true },
   { src: meadow.url, title: "Chasing the cloud", caption: "A boy runs laughing through a summer meadow.", category: "Interior Scenes", alt: "Boy in a yellow sweater running through a meadow beneath a flowing cloud", featured: true },
   { src: macaw.url, title: "Macaw", caption: "Watercolor study of a macaw in the rainforest.", category: "Character Design", alt: "Watercolor blue and gold macaw perched on a mossy branch", featured: true },
