@@ -30,7 +30,6 @@ import natureWalk from "@/assets/portfolio/nature-walk.jpg.asset.json";
 import puppyRun from "@/assets/portfolio/puppy-run.jpg.asset.json";
 import girlPuppy from "@/assets/portfolio/girl-puppy.jpg.asset.json";
 import kindKids from "@/assets/portfolio/kind-kids.jpg.asset.json";
-import bearColoring from "@/assets/portfolio/bear-coloring.jpg.asset.json";
 
 export type PortfolioCategory =
   | "Book Covers"
