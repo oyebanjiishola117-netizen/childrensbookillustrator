@@ -7,6 +7,8 @@ import portrait from "@/assets/portrait.png.asset.json";
 const TITLE = "Azeez Faruq — Children's Book Illustrator";
 const DESCRIPTION =
   "Azeez Faruq is a children's book illustrator creating characters, story scenes, covers and print-ready files for authors and publishers.";
+const liveAssetUrl = (path: string) =>
+  new URL(path, "https://childrensbookillustrator.lovable.app").href;
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -59,7 +61,7 @@ function Index() {
       {/* HERO */}
       <section className="relative overflow-hidden">
         <img
-          src={door.url}
+          src={liveAssetUrl(door.url)}
           alt=""
           aria-hidden
           className="absolute inset-0 h-full w-full object-cover"
@@ -163,7 +165,7 @@ function Index() {
         <div className="mx-auto grid max-w-6xl items-center gap-10 px-5 sm:px-8 md:grid-cols-[320px_1fr]">
           <div className="aspect-[4/5] w-full max-w-xs overflow-hidden rounded-3xl bg-sand/60 shadow-lift">
             <img
-              src={portrait.url}
+              src={liveAssetUrl(portrait.url)}
               alt="Portrait of Azeez Faruq"
               className="h-full w-full object-cover"
             />
