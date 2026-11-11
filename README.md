@@ -1,14 +1,20 @@
-# Welcome to your Lovable project
+# Your Next Favorite Website
+
+https://lovable.dev/preview/vspw3vcE3WQ5zL8MyWId9t6zXnZ6vSog
+
+continue working on this website
 
 This project was built with [Lovable](https://lovable.dev).
 
+**Live app**: https://childrensbookillustrator.lovable.app
+
 ## Build with Lovable
 
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
+Continue developing this project in the [Lovable editor](https://lovable.dev/projects/8a159e6a-b155-4cf6-b491-6887e978e69e).
 
 - **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+- **Stay in sync**: every change made in Lovable is committed straight to this repository.
+- **Full ownership**: this code is yours. Push to `main` on GitHub and your changes sync back into Lovable, ready for your next prompt.
 
 ## Development
 
@@ -20,10 +26,3 @@ cd <repository-name>
 npm i
 npm run dev
 ```
-
-## Built with
-
-- TanStack Start
-- TypeScript
-- React
-- Tailwind CSS
